@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/gradient_bg_style"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    style="@style/gradient_bg_style"
     tools:context=".MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:weightSum="10"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="10">
 
         <TextView
+            style="@style/tv_header_style"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimen_0dp"
             android:layout_weight="1"
-            style="@style/tv_header_style"
             android:text="@string/str_tic_tac_toe" />
+
         <View
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dimen_0dp"
-            android:layout_weight=".5"/>
+            android:layout_weight=".5" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimen_0dp"
@@ -38,20 +40,27 @@
                 android:weightSum="3">
 
                 <TextView
+                    android:id="@+id/tvClick1"
+                    style="@style/tv_click_style"
                     android:layout_width="@dimen/dimen_0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
 
                 <TextView
+                    android:id="@+id/tvClick2"
+                    style="@style/tv_click_style"
                     android:layout_width="@dimen/dimen_0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
 
                 <TextView
+                    android:id="@+id/tvClick3"
+                    style="@style/tv_click_style"
                     android:layout_width="@dimen/dimen_0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_0dp"
@@ -60,20 +69,27 @@
                 android:weightSum="3">
 
                 <TextView
+                    android:id="@+id/tvClick4"
+                    style="@style/tv_click_style"
                     android:layout_width="@dimen/dimen_0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
 
                 <TextView
+                    android:id="@+id/tvClick5"
+                    style="@style/tv_click_style"
                     android:layout_width="@dimen/dimen_0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
 
                 <TextView
+                    android:id="@+id/tvClick6"
+                    style="@style/tv_click_style"
                     android:layout_width="@dimen/dimen_0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_0dp"
@@ -82,22 +98,41 @@
                 android:weightSum="3">
 
                 <TextView
+                    android:id="@+id/tvClick7"
+                    style="@style/tv_click_style"
                     android:layout_width="@dimen/dimen_0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
 
                 <TextView
+                    android:id="@+id/tvClick8"
+                    style="@style/tv_click_style"
                     android:layout_width="@dimen/dimen_0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
 
                 <TextView
+                    android:id="@+id/tvClick9"
+                    style="@style/tv_click_style"
                     android:layout_width="@dimen/dimen_0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
             </LinearLayout>
 
         </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_weight=".5" />
+
+        <TextView
+            android:id="@+id/tvWin"
+            style="@style/tv_header_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_weight="1"
+            android:visibility="invisible" />
 
     </LinearLayout>
 
