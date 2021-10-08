@@ -18,5 +18,13 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">50sp</item>
     </style>
+    <style name="tv_win_style" parent="Widget.AppCompat.TextView">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:background">@drawable/tv_click_shape</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">40sp</item>
+    </style>
 
 </resources>
