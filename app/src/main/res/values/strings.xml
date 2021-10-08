@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TIic Tac Toe Game</string>
+    <string name="str_tic_tac_toe">Tic Tac Toe</string>
+</resources>
