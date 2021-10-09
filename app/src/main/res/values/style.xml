@@ -26,5 +26,11 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">40sp</item>
     </style>
+    <style name="pb_circular_splash_screen_style" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/pb_circular_shape</item>
+        <item name="android:animationResolution">@integer/material_motion_duration_long_1</item>
+        <item name="android:indeterminateDuration">1000</item>
+    </style>
+
 
 </resources>

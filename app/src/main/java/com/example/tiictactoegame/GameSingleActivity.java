@@ -1,7 +1,6 @@
 package com.example.tiictactoegame;
 
 import android.annotation.SuppressLint;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class GameSingleActivity extends AppCompatActivity {
     TextView tvClick1;
     TextView tvClick2;
     TextView tvClick3;
@@ -26,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_game_single);
         tvClick1 = findViewById(R.id.tvClick1);
         tvClick2 = findViewById(R.id.tvClick2);
         tvClick3 = findViewById(R.id.tvClick3);
@@ -37,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         tvClick8 = findViewById(R.id.tvClick8);
         tvClick9 = findViewById(R.id.tvClick9);
         tvWin = findViewById(R.id.tvWin);
-        btReset=findViewById(R.id.btReset);
+        btReset = findViewById(R.id.btReset);
         startGame();
         btReset.setOnClickListener(view -> {
             clear();
@@ -75,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         tvClick7.setClickable(true);
         tvClick8.setClickable(true);
         tvClick9.setClickable(true);
-        TextView text=new TextView(this);
+        TextView text = new TextView(this);
         text.getCurrentHintTextColor();
         text.getCurrentTextColor();
         text.getDrawingCacheBackgroundColor();
