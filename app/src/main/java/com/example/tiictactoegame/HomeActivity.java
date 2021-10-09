@@ -22,5 +22,8 @@ public class HomeActivity extends AppCompatActivity {
         btMultiPlayer.setOnClickListener(view -> {
             startActivity(new Intent(context,GameSingleActivity.class));
         });
+        btSinglePlayer.setOnClickListener(view -> {
+            startActivity(new Intent(context,GameTwoActivity.class));
+        });
     }
 }
